@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Page.master.cs" Inherits="Projeto1.Page" %>
+
+<!DOCTYPE html>
+
+<html>
+
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Css/Projeto.css" rel="stylesheet" />
+    <link href="Css/StyleSheet.css" rel="stylesheet" />
+
+
+    <!--     Bibliotecas para inserir slide em paginas        -->
+    <link href="JavaScript/flexslider.css" rel="stylesheet" />
+    <script src="JavaScript/jquery-1.7.2.min.js"></script>
+    <script src="JavaScript/flexslider.min.js"></script>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <!-- CABEÇALHO -->
+        <div class="cabecalho content-wrap">
+
+            <did class="logomarca">
+                <asp:Image ID="Image1" ImageUrl="~/images/marca1.png" runat="server" />
+            </did>
+
+
+            <div class="barra-titulo">
+                <h2>Analise e Desenvolvimento de Sistemas</h2>
+            </div>
+
+
+            <div class="barra-menu">
+                <a href="Default.aspx">Home</a>
+                <a href="Sobre.aspx">Sobre nós</a>
+                <a href="Contato.aspx">Contate-nos</a>
+                <a href="FormularioUsuario.aspx">Formulário</a>
+            </div>
+
+        </div><!--FECHAMENTO CABEÇALHO-->
+        <hr />
+
+
+        <!-- CONTEUDO -->
+        <div class="conteudo content-wrap">
+            <asp:ContentPlaceHolder ID="Conteudo" runat="server">
+            </asp:ContentPlaceHolder>
+        </div><!--FECHAMENTO CONTEUDO-->
+
+
+        <!-- RODAPÉ -->
+        <div class="rodape">
+            <div class="content-wrap">
+                <div class="row">
+                    
+                    <div class="col-4">
+                        <div class="box margin-right-20">
+                            <h2>FATEC</h2>
+                            <h3>Analise e Desenvolvimento de Sistemas</h3>
+                            <h4>Americana</h4>
+                        </div>
+                    </div>
+
+
+                    <div class="col-4">
+                        <div class="box margin-right-20">
+                            <h3>Menu</h3>
+                            <a href="Default.aspx">Home</a><br />
+                            <a href="Sobre.aspx">Um pouco sobre nós</a><br />
+                            <a href="Contato.aspx">Nossas Redes</a><br />
+                        </div>
+                    </div>
+
+
+                    <div class="col-4">
+                        <div class="box" style="text-align: right">
+                            <img src="images/marca1.png" />
+                        </div>
+                    </div>
+
+                </div><!--FECHAMENTO ROW-->
+            </div><!--FECHAMENTO CONTENT-WRAP-->
+        </div><!--FECHAMENTO RODAPÉ-->
+    </form>
+</body>
+</html>
+
+<!-- Modelo criado para todas as paginas -->
